@@ -3,4 +3,20 @@ let counts = {};
 
 // your code here
 
+for (let i = 0; i < par.length; i++){
+    var letter = par[i].toLowerCase()
+    //console.log(letter)
+    if (letter == " "){
+        continue;
+    }
+    if (letter in counts){
+        //console.log("Y")
+        counts[letter] += 1 
+    }
+    else {
+        //console.log("N")
+        counts[letter] = 1 
+    }
+}
+
 console.log(counts);
